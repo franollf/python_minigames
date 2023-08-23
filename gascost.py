@@ -22,36 +22,37 @@ jaguarc = 0.14
 jaguarh = 0.102267
 
 
-def main():
-    print(f" In the {cartype}, going to {destination} will cost {literperkm * priusc:.2f}$")
+def main(x, y):
+    print(f" In the {y}, going to {destination} will cost {literperkm * x:.2f}$")
 
 if route == "c":
     if cartype == "P": 
-        main()
+        main(priusc, "Prius")
     
     elif cartype == "J":
-        main()
+        main(jaguarc, "Jaguar")
 
     elif cartype == "T":
-        main()
+        main(toyotac, "Toyota")
 
     elif cartype == "H":
-        main()
+        main(hondac, "Honda")
         
     else:
         print("Please enter a valid car type")
 
 if route == "h":
     if cartype == "P":
-        main()
+        main(priush, "Prius")
+
     elif cartype == "J":
-        main()
+        main(jaguarh, "Jaguar")
 
     elif cartype == "T":
-        main()
+        main(toyotah, "Toyota")
 
     elif cartype == "H":
-        main()
+        main(hondah, "Honda")
 
     else:
         print("Please enter a valid car type")
