@@ -34,7 +34,7 @@ def compute_guess(x):
 
     print(f"The Computer Has guessed your number {guess}! Correctly!")
 
-
+# Change "guess(100" to play the computer guesses or you guesses.
 guess(100)
 
 
